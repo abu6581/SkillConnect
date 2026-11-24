@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find skilled local service professionals with SkillConnect.">
+  <title>SkillConnect | Find trusted skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<header class="header"><a class="logo" href="#"><span>SC</span> SkillConnect</a><nav id="nav"><a href="#find">Find a professional</a><a href="#how">How it works</a><a href="#join">For workers</a></nav><a class="post-link" href="#find">Find a service ↗</a><button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button></header>
+<main>
+  <section class="hero">
+    <div class="hero-content"><span class="eyebrow"><i></i> YOUR LOCAL SKILL NETWORK</span><h1>Good work starts<br>with the <span>right person.</span></h1><p>Discover skilled professionals for everyday jobs, home repairs and your next big project.</p><a class="button" href="#find">Explore professionals <b>↗</b></a><div class="hero-proof"><div class="proof-avatars"><span>R</span><span>M</span><span>A</span></div><small><b>Skills for everyday life</b><br>Find the right help for the job</small></div></div>
+    <div class="hero-visual"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=85" alt="Professional home service worker at work"><div class="floating-card"><span class="float-icon">✓</span><div><b>One place, many skills</b><small>From repairs to renovations</small></div></div><div class="hero-stamp">SKILL<br>MEETS<br>TRUST <span>✳</span></div></div>
+  </section>
+  <section class="category-section" id="find"><div class="section-top"><div><span class="eyebrow">Explore by expertise</span><h2>What do you need done?</h2></div><p>Choose a category to find a professional with the right skills.</p></div>
+    <div class="category-list" id="categoryList">
+      <button class="category active" data-category="All"><span>✦</span> All skills</button>
+      <button class="category" data-category="Mason"><span>▦</span> Mason</button>
+      <button class="category" data-category="Electrician"><span>ϟ</span> Electrician</button>
+      <button class="category" data-category="Plumber"><span>♧</span> Plumber</button>
+      <button class="category" data-category="Carpenter"><span>⌁</span> Carpenter</button>
+      <button class="category" data-category="Painter"><span>◒</span> Painter</button>
+      <button class="category" data-category="Cleaner"><span>✧</span> Cleaner</button>
+    </div>
+    <div class="search-row"><label class="search-box"><span>⌕</span><input id="workerSearch" type="search" placeholder="Search by name or skill..."></label><select id="sortWorkers" aria-label="Sort workers"><option value="name">Sort: Name</option><option value="rating">Top rated (demo)</option></select><button id="showSaved" class="saved-toggle">♡ Saved <span id="savedCount">0</span></button></div>
+    <div class="results-head"><span id="resultCount">Loading professionals...</span><span>Demo profiles · API-powered</span></div>
+    <div id="workerGrid" class="worker-grid"></div>
+    <p id="workerStatus" class="status" role="status"></p>
+  </section>
+  <section class="how-section" id="how"><div class="section-top"><div><span class="eyebrow">Simple from start to finish</span><h2>Help is closer than you think.</h2></div><p>A simple way to discover a skill, review a profile and contact a service professional.</p></div><div class="steps"><article><span>01</span><h3>Search a skill</h3><p>Choose the type of work you need, from electrical repairs to painting.</p></article><article><span>02</span><h3>Compare profiles</h3><p>Review the profile details and save people you may want to contact.</p></article><article><span>03</span><h3>Get in touch</h3><p>Use the contact details to discuss the job, price and schedule.</p></article></div></section>
+  <section class="join-section" id="join"><div><span class="eyebrow">Are you a skilled professional?</span><h2>Your skill deserves<br>to be discovered.</h2><p>In a production version, workers could create verified profiles, add portfolios and receive job requests.</p></div><a class="button light" href="mailto:hello@skillconnect.example?subject=Worker%20profile%20enquiry">Register interest ↗</a></section>
+</main>
+<footer><a class="logo" href="#"><span>SC</span> SkillConnect</a><p>Connecting people with practical skills.</p><small>© <span id="year"></span> SkillConnect · Student project</small></footer>
+<dialog id="profileDialog"><button class="dialog-close" id="closeDialog" aria-label="Close">×</button><div id="profileContent"></div></dialog>
+</body></html>
